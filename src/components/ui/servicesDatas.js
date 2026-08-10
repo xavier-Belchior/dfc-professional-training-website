@@ -1,0 +1,68 @@
+import {
+  Calculator,
+  FileText,
+  LineChart,
+  PieChart,
+  Scale,
+  Wallet,
+  ArrowUpRight,
+  Zap,
+  Flame,
+  Truck,
+  Layers,
+  DollarSign,
+  Hammer,
+  Shield,
+} from "lucide-react";
+
+export const services = [
+  {
+    id: "1",
+    icon: Zap,
+    title: "Eletricidade",
+    description: "Formação completa em instalações e segurança elétrica",
+    highlight: "Certificação Profissional",
+  },
+  {
+    id: "2",
+    icon: Flame,
+    title: "Soldadura Industrial",
+    description: "Técnicas avançadas de soldagem para indústria",
+    highlight: "Alta Demanda",
+  },
+  {
+    id: "3",
+    icon: Shield,
+    title: "Segurança no Trabalho",
+    description: "Proteção e normas de segurança ocupacional",
+    highlight: "Normas Atualizadas",
+  },
+  {
+    id: "4",
+    icon: Hammer,
+    title: "Máquinas Pesadas",
+    description: "Operação e manutenção de equipamentos",
+    highlight: "Treinamento Prático",
+  },
+  {
+    id: "5",
+    icon: DollarSign,
+    title: "Operador de Caixa",
+    description: "Gestão de pagamentos e atendimento",
+    highlight: "Preparação para o Mercado",
+  },
+  {
+    id: "6",
+    icon: Layers,
+    title: "Drywall",
+    description: "Técnicas de revestimento e acabamento",
+    highlight: "Acabamento Profissional",
+  },
+  {
+    id: "7",
+    icon: Truck,
+    title: "Empilhadeira",
+    description: "Operação segura de equipamentos de carga",
+    highlight: "Operação Certificada",
+  },
+];
