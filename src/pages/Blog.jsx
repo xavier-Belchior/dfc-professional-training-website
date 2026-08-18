@@ -5,15 +5,21 @@ import { FeaturedArcticle } from "../components/blog/FeaturedArcticle";
 import { featuredArticle } from "../lib/blog-data";
 import { BlogGrid } from "../components/blog/BlogGrid";
 import { BlogSidebar } from "../components/blog/BlogSidebar";
+import { CTASection } from "../components/blog/CTASection";
+import { ArrowLeft } from "lucide-react";
 
 export const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white relative">
+      <div className="bg-blue-600 group  w-fit p-1.5 rounded-sm absolute top-8 left-8">
+        <a href="/">
+          <ArrowLeft size={24} className="font-bold text-white  " />
+        </a>
+      </div>
       <BlogHero onSearch={setSearchQuery} />
-
       {/* Category  Filters */}
       <BlogFilter
         selectedCategory={selectedCategory}
@@ -38,6 +44,8 @@ export const Blog = () => {
           </div>
         </div>
       </div>
+      {/* CTA Section */}
+      <CTASection />
     </main>
   );
 };

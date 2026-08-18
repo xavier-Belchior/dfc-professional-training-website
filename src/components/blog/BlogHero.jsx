@@ -1,4 +1,4 @@
-import { Search } from "lucide-react";
+import { ArrowLeft, Search } from "lucide-react";
 import React, { useState } from "react";
 
 export const BlogHero = ({ onSearch }) => {
@@ -9,7 +9,7 @@ export const BlogHero = ({ onSearch }) => {
     onSearch(query);
   };
   return (
-    <section className="py-16  md:py-24 bg-white *:">
+    <section className="py-16  pl-2  md:pl-8  md:py-24 bg-white *:">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center ">
           <p className="text-sm font-semibold text-blue-600 tracking-wide uppercase mb-4">

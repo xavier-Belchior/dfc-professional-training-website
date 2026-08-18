@@ -51,6 +51,12 @@ export const PopularArcticles = () => {
                   );
                 })}
               </div>
+
+              <div className="mt-2">
+                <span className="inline-block px-2 py-1 bg-blue-50 text-blue-60 text-xs font-medium rounded">
+                  {article.category}
+                </span>
+              </div>
             </div>
           </a>
         ))}

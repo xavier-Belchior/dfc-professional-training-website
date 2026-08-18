@@ -25,7 +25,7 @@ export const LandingPage = () => {
       <Results />
 
       {/* THIS IS NOT A main  blog page  */}
-      <Blog />
+      {/* <Blog /> this is temporally closed */}
       <Parteners />
       <Team />
       <Testemonials />

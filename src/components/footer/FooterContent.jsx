@@ -3,6 +3,7 @@ import { contacts, footerSections, socialLinks } from "../ui/footerlink";
 import { ContactInfo } from "./ContactInfo";
 import { SocialLinks } from "./SocialLinks";
 import { FooterDiv } from "./FooterDiv";
+import { ArrowUp } from "lucide-react";
 
 export const FooterContent = () => {
   return (
@@ -53,6 +54,15 @@ export const FooterContent = () => {
             link={footerSection.links}
           />
         ))}
+
+        <button className="absolute right-4 top-[62%] text-white ">
+          <a
+            href="/#home"
+            className="w-8 h-8 flex justify-center items-center rounded-md bg-blue-600 "
+          >
+            <ArrowUp size={10}/>
+          </a>
+        </button>
       </div>
 
       {/* Bottom Bar */}

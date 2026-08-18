@@ -23,7 +23,12 @@ export const Header = () => {
     { label: "Sobre", href: "#about" },
     { label: "Cursos", href: "#cursos" },
     { label: "Resultados", href: "#result" },
-    { label: "Blog", href: "/blog-page" },
+    {
+      label: "Blog",
+      href: "/blog-page",
+      classNam:
+        "text-sm font-bold text-blue-600 hover:text-blue-700 animate-pulse transition-colors",
+    },
     { label: "Contactos", href: "#contactos" },
   ];
   return (
@@ -46,7 +51,7 @@ export const Header = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className={`text-sm font-medium text-muted-foreground hover:text-primary transition-colors ${item.classNam}`}
             >
               {item.label}
             </a>
@@ -84,7 +89,7 @@ export const Header = () => {
               key={item.label}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors leading-relaxed "
+              className={`${item.classNam} text-base font-medium text-muted-foreground hover:text-foreground transition-colors leading-relaxed `}
             >
               {item.label}
             </a>
